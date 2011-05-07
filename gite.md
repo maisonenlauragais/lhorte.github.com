@@ -77,21 +77,6 @@ Barbecue (charbon fourni), Plancha, Parking privé, Chauffage et Climatisation, 
 * Le départ du canal du Midi et sa rigole dans la superbe forêt de Ramondens.
 * Un lac de pêche avec un parc de jeu pour enfants et un espace pour picniquer,
 
-# Aux alentours
-* cité de Carcassonne (~25 km),
-* Les châteaux cathares,
-* Le Barrage de Saint Ferréol (~17 km),
-* Le Canal du Midi (~17 km),
-* Village de Revel, de Sorè et Durfort (~20 km),
-* Le lac de St Denis (~5 km),
-* Le Gouffre Géant de Cabrespine (~45 km),
-* La Grotte de Limousis (~35 km),
-* Les quatre châteaux cathares de Lastours (~25 km),
-* Abbaye de St-Papoul (~15 km),
-* Narbonne (~100 km),
-* Le pas de la case / Andorre (~150 km),
-* ...
-
 # Particularité
 * Animaux acceptés
 * Draps fournis
