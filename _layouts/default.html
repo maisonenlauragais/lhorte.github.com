@@ -1,19 +1,151 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+
     <!-- Framework CSS --> 
-    <link rel="stylesheet" href="/_static/blueprint/screen.css" type="text/css" media="screen, projection"> 
-    <link rel="stylesheet" href="/_static/blueprint/print.css" type="text/css" media="print"> 
-    <!--[if lt IE 8]><link rel="stylesheet" href="/_stastic/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
+        <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection"> 
+        <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print"> 
+        <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]--> 
  
-    <!-- Import fancy-type plugin for the sample page. --> 
-    <link rel="stylesheet" href="/_static/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
+        <!-- Import fancy-type plugin for the sample page. --> 
+        <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
        
         <title>{{; page.title }}</title>
+<style type="text/css"> 
+body {
+background-image: url(/images/background.gif);
+}
+.container {
+background-color:white;
+padding: 10px;
+}
+
+/* MENU */
+#menu{
+width:974px;
+height:33px;
+padding:0;
+font-family:verdana;
+font-size:15px;
+}
+#menu li{
+position:relative;
+display:block;
+height:33px;
+float:left;
+list-style:none;
+border-right:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+border-bottom:1px solid #777777;
+text-transform: uppercase;
+line-height:33px;
+padding-left:40px;
+padding-right:40px;
+font-weight:bold;
+color:#393f4d;
+background-image: url('/images/menu.png');
+}
+#menu li.first {
+border-left:none;
+}
+#menu li.last {
+border-right:none;
+}
+#menu li:hover {
+background-image:url('/images/menu_hover.png')
+}
+
+#menu li a:hover{
+color:#FFFFFF;
+text-decoration:none;
+text-shadow: rgba(0, 0, 0, 0.398438) 2px 2px 2px;
+
+}
+#menu li a{
+color:#262626;
+text-decoration:none;
+text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
+}
+
+/* SIDEBAR */
+.sidebar {
+background-color: #BBB;
+margin: 0;
+padding: 20px 10px 20px 10px;
+min-height: 650px;
+}
+
+
+/* SIDEBAR */
+#sidebar{
+float:right;
+width:230px;
+background-color:#bbb;
+margin: 0;
+padding:20px 10px 20px 10px;
+min-height:650px;
+}
+#sidebar h1 {
+font-size:18px;
+color:#424242;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(119, 119, 119, 0.7) 2px 2px 2px;
+font-style:normal;
+border-bottom: 1px solid #424242;
+}
+#sidebar  p {
+padding:10px 10px 10px 20px;
+text-align : left;
+}
+#sidebar a{
+color:#262626;
+text-decoration: underline;
+}
+#sidebar a:hover, #sidebar a:focus, {
+color:#555555;
+text-decoration: underline;
+}
+
+
+</style>
     </head>
     <body>
         <div class="container">  
+            <h1>Maison du jardinier</h1>
+            <ul id="menu">
+		<li class="first"><a href="/">Accueil</a></li>
+	        <li><a href="/gite">Le Gite</a></li>
+		<li><a href="/tarifs">Tarifs</a></li>
+		<li><a href="/galerie">Galerie</a></li>
+		<li><a href="/acces">Acces</a></li>
+		<li class="last"><a href="/contact">Contact</a></li>
+	    </ul>
+            <div class="span-19">
             {{ content }}
+            </div>
+            <div class="span-4 last">
+                 <div id="sidebar">
+			<h1>La maison du jardinier ~</h1>
+			<p>
+                                Mireval-Lauragais
+		        </p>
+			<h1>Référencement ~</h1>
+			<p>Le Chalet Cathare est référencé sur <a href="http://www.gites-de-france.com" alt="Gite de France">Gîtes de France</a><br>
+			</p><center><img src="/images/gitedefrance.png"></center><p></p>
+			<h1>Cadeau de Bienvenue ~</h1>
+			<p><a href="/images/panier_garni.jpg" style="float:left;padding-right:5px" class="screen" title="Le Panier Garni" rel="lightbox"><img src="/images/panier_garni_petit.jpg" alt="Panier Garni"></a>
+			Pour votre arrivée, un panier garni avec les produits de la région vous sera offert par le propriétaire.
+			</p>
+			<h1>Partenaire ~</h1>
+			<p><a href="/images/bouteille.jpg" style="float:left;padding-right:5px" class="screen" title="Vin château-bas " rel="lightbox"><img src="/images/bouteille_petit.jpg" alt="Vin château-bas"></a>
+
+			Venez déguster et partager la culture et la qualité du vin des frères d'Albenas
+                        </p>
+		</div>
+            </div>
         </div>
     </body>
 </html>
