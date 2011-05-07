@@ -1,6 +1,6 @@
 ---
 layout: default
-title: test index
+title: Tarifs 2010
 ---
 
 # Les tarifs 2010 

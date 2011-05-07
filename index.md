@@ -1,6 +1,6 @@
 ---
 layout: default
-title: test index
+title: La maison du Jardinier
 ---
 
 # Calme et Repos.

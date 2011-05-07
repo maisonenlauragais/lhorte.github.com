@@ -1,6 +1,6 @@
 ---
 layout: default
-title: test index
+title: Accéder à la maison du jardinier
 ---
 
 # Plan 
