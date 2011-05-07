@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
 
     <!-- Framework CSS --> 
         <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection"> 
@@ -10,7 +10,18 @@
  
         <!-- Import fancy-type plugin for the sample page. --> 
         <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection"> 
-       
+      
+	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen" /> 
+        <script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script> 
+	<script type="text/javascript" src="/js/fancybox/jquery.easing-1.3.pack.js"></script> 
+	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script> 
+	<script type="text/javascript"> 
+		$(document).ready(function() {
+			$("a.screen").fancybox({ 'zoomSpeedIn': 300, 'zoomSpeedOut': 300, 'overlayShow': true, 'overlayOpacity': 0.7 });
+		});
+	</script> 
+
+
         <title>{{; page.title }}</title>
 <style type="text/css"> 
 body {
@@ -68,19 +79,8 @@ text-decoration:none;
 text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
 }
 
-/* SIDEBAR */
-.sidebar {
-background-color: #BBB;
-margin: 0;
-padding: 20px 10px 20px 10px;
-min-height: 650px;
-}
-
-
-/* SIDEBAR */
+/** sidebar */
 #sidebar{
-float:right;
-width:230px;
 background-color:#bbb;
 margin: 0;
 padding:20px 10px 20px 10px;
@@ -109,6 +109,113 @@ color:#555555;
 text-decoration: underline;
 }
 
+/** main */
+#main h1 {
+font-size:30px;
+color:#99c51c;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+font-style:normal;
+}
+#main h2 {
+padding-left:20px;
+font-size:18px;
+color:#99c51c;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+font-style:normal;
+}
+#main a {
+color:#7ea218;
+}
+#main a:hover, #main a:focus {
+color:#85a330;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+}
+#main ul li {
+margin-left:40px;
+padding:0;
+list-style:circle;
+text-align : justify;
+}
+
+#screen {
+padding:0 20px 20px 20px;
+}
+#screen img {
+border: 1px solid #CCC;
+padding: 2px;	
+margin: 0 5px 0 0;
+}
+
+
+#google_maps {
+width:60;
+border:1px solid #585858;
+padding:10px;
+text-align:center;
+}
+
+
+/** tarifs */
+table.tarifs thead tr th {
+background:#878787;
+width:10px;
+}
+
+table.tarifs thead tr td {
+background:#b7b7b7;
+width:120px;
+text-align:center;
+}
+
+table.tarifs tbody tr.haute-saison th {
+background:#FE9A2E;
+text-align:left;
+}
+
+table.tarifs tbody tr.haute-saison td {
+background:#F7BE81;
+text-align:center;
+}
+
+
+table.tarifs tbody tr.pleine-saison th {
+background:#93bb88;
+text-align:left;
+}
+
+table.tarifs tbody tr.pleine-saison td {
+background:#ccfabe;
+text-align:center;
+}
+
+table.tarifs tbody tr.moyenne-saison th {
+background:#6896ca;
+text-align:left;
+}
+
+table.tarifs tbody tr.moyenne-saison td {
+background:#a3bedc;
+text-align:center;
+}
+
+table.tarifs tbody tr.basse-saison th {
+background:#df4f4f;
+text-align:left;
+}
+
+table.tarifs tbody tr.basse-saison td {
+background:#f5b8b8;
+text-align:center;
+}
+
+
+
 
 </style>
     </head>
@@ -117,34 +224,33 @@ text-decoration: underline;
             <h1>Maison du jardinier</h1>
             <ul id="menu">
 		<li class="first"><a href="/">Accueil</a></li>
-	        <li><a href="/gite">Le Gite</a></li>
-		<li><a href="/tarifs">Tarifs</a></li>
-		<li><a href="/galerie">Galerie</a></li>
-		<li><a href="/acces">Acces</a></li>
+	        <li><a href="/gite.html">Le Gite</a></li>
+		<li><a href="/tarifs.html">Tarifs</a></li>
+		<li><a href="/galerie.html">Galerie</a></li>
+		<li><a href="/acces.html">Acces</a></li>
 		<li class="last"><a href="/contact">Contact</a></li>
 	    </ul>
-            <div class="span-19">
+            <div id="main" class="span-17">
             {{ content }}
             </div>
-            <div class="span-4 last">
-                 <div id="sidebar">
-			<h1>La maison du jardinier ~</h1>
-			<p>
-                                Mireval-Lauragais
-		        </p>
-			<h1>Référencement ~</h1>
-			<p>Le Chalet Cathare est référencé sur <a href="http://www.gites-de-france.com" alt="Gite de France">Gîtes de France</a><br>
-			</p><center><img src="/images/gitedefrance.png"></center><p></p>
-			<h1>Cadeau de Bienvenue ~</h1>
-			<p><a href="/images/panier_garni.jpg" style="float:left;padding-right:5px" class="screen" title="Le Panier Garni" rel="lightbox"><img src="/images/panier_garni_petit.jpg" alt="Panier Garni"></a>
-			Pour votre arrivée, un panier garni avec les produits de la région vous sera offert par le propriétaire.
-			</p>
-			<h1>Partenaire ~</h1>
-			<p><a href="/images/bouteille.jpg" style="float:left;padding-right:5px" class="screen" title="Vin château-bas " rel="lightbox"><img src="/images/bouteille_petit.jpg" alt="Vin château-bas"></a>
+            <div id="sidebar" class="span-6 last">
+		<h1>La maison du jardinier ~</h1>
+		<p>
+                Jean-Manuel Ramière de Fortanier
+                Mireval-Lauragais
+	        </p>
+		<h1>Référencement ~</h1>
+		<p>Le Chalet Cathare est référencé sur <a href="http://www.gites-de-france.com" alt="Gite de France">Gîtes de France</a><br>
+		</p><center><img src="/images/gite-de-france.png"></center><p></p>
+		<h1>Cadeau de Bienvenue ~</h1>
+		<p><a href="/photos/panier_garni.jpg" style="float:left;padding-right:5px" class="screen" title="Le Panier Garni" rel="lightbox"><img src="/photos/panier_garni_petit.jpg" alt="Panier Garni"></a>
+		Pour votre arrivée, un panier garni avec les produits de la région vous sera offert par le propriétaire.
+		</p>
+		<h1>Partenaire ~</h1>
+		<p><a href="/photos/bouteille.jpg" style="float:left;padding-right:5px" class="screen" title="Vin château-bas " rel="lightbox"><img src="/photos/bouteille_petit.jpg" alt="Vin château-bas"></a>
 
-			Venez déguster et partager la culture et la qualité du vin des frères d'Albenas
-                        </p>
-		</div>
+		Venez déguster et partager la culture et la qualité du vin des frères d'Albenas
+                </p>
             </div>
         </div>
     </body>
