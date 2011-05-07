@@ -18,14 +18,14 @@ title: test index
 		<tr class="haute-saison">
 			<th>&nbsp;</th>
 			<td>Haute Saison</td>
-			<td>900 €</td>
-			<td>200 €</td>
+			<td>1500 €</td>
+			<td>400 €</td>
 		</tr>
 		<tr class="pleine-saison">
 			<th>&nbsp;</th>
 			<td>Pleine saison</td>
-			<td>900 €</td>
-			<td>200 €</td>
+			<td>1100 €</td>
+			<td>300 €</td>
 		</tr>
         	<tr class="moyenne-saison">
 			<th>&nbsp;</th>
@@ -36,7 +36,7 @@ title: test index
 		<tr class="basse-saison">
 			<th>&nbsp;</th>
 			<td>Basse Saison</td>
-			<td>900 €</td>
+			<td>700 €</td>
 			<td>200 €</td>
 		</tr>
 	</tbody>

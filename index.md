@@ -27,3 +27,10 @@ A deux pas du canal du midi, vous êtes au milieu de siècles dhistoire intances
 <a href="/photos/interieur.jpg" class="screen" title="Maison vu de l'intérieur" rel="group"><img src="/photos/interieur_petit.jpg" alt="Vue de l'intérieur" /></a> 
 </div> 
 
+# Naviguez dans le domaine
+
+<object width="640" height="400">
+<param name="movie" value="http://media3.everyscape.com/TOURX/95/13095/TOUR.SWF"> </param>
+<embed src="http://media3.everyscape.com/TOURX/95/13095/TOUR.SWF" width="640" height="400">&nbsp;
+</embed>
+</object>
