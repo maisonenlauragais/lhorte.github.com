@@ -2,10 +2,6 @@
 layout: default
 title: test index
 ---
-# posts
-{% for post in site.posts %}
-{{ post.date | date_to_string }} [{{ post.title }}]({{ post.url }})
-{% endfor %}
 
 # Calme et Repos.
 En famille ou entre amis venez profiter du calme, du confort, et du charme d'une maison de charme en bas d'une colline splendide.
