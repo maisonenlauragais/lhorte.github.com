@@ -17,17 +17,18 @@ A deux pas du canal du midi, vous êtes au milieu de siècles dhistoire intances
 
 
 # Ambiance Chaleureuse.
-
+Vous pourrez en avoir l'expérience dès cet été...
 <div id="screen"> 
 <a href="/photos/de_loin.jpg" class="screen" title="Maison vu de l'extérieur" rel="group"><img src="/photos/de_loin_petit.jpg" alt="Vue de l'extérieur" /></a>&nbsp;&nbsp;
 <a href="/photos/piscine.jpg" class="screen" title="Vue de la piscine" rel="group"><img src="/photos/piscine_petit.jpg" alt="Vue de la piscine" /></a>&nbsp;&nbsp;
 <a href="/photos/interieur.jpg" class="screen" title="Maison vu de l'intérieur" rel="group"><img src="/photos/interieur_petit.jpg" alt="Vue de l'intérieur" /></a> 
 </div> 
 
-# Naviguez dans le domaine
+# Une histoire de famille
 
-<object width="640" height="400">
-<param name="movie" value="http://media3.everyscape.com/TOURX/95/13095/TOUR.SWF"> </param>
-<embed src="http://media3.everyscape.com/TOURX/95/13095/TOUR.SWF" width="640" height="400">&nbsp;
-</embed>
-</object>
+Un abandon, une restauration, un avenir, votre plaisir...
+<div id="screen"> 
+<a href="/photos/histoire.jpg" class="screen" title="Une histoire unique" rel="group"><img src="/photos/histoire_petit.jpg" alt="Une histoire unique" /></a>&nbsp;&nbsp;
+</div>
+
+
