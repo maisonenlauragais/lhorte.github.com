@@ -6,15 +6,15 @@ title: Tarifs 2010
 # Les tarifs 2010 
 
 <table class="tarifs" cellpadding="1" cellspacing="1" width="450">
-        <thead>
+	<thead>
 		<tr> 
-        		<th>&nbsp;</th>
+        	<th>&nbsp;</th>
 			<td>Saison</td>
 			<td>Semaine</td>
 			<td>Week-end</td>
 		</tr>
-        </thead>
-        <tbody>
+    </thead>
+    <tbody>
 		<tr class="haute-saison">
 			<th>&nbsp;</th>
 			<td>Haute Saison</td>
@@ -44,25 +44,25 @@ title: Tarifs 2010
 
 ## Haute Saison:
 
-* du 17/07 au 20/08
+* du <time datetime="2011-07-17">17 juillet</time> au  <time datetime="2011-08-12">12 août</time>
 
 ## Pleine Saison:
 
-* du 03/07 au 16/07
-* du 21/08 au 27/08
+* du <time datetime="2011-07-17">03 juillet</time> au <time datetime="2011-07-17">16 juillet</time>
+* du <time datetime="2011-08-21">21 août</time> au <time datetime="2011-08-27">27 septembre</time>
 
 ## Moyenne Saison:
 
-* du 06/02 au 05/03
-* du 03/04 au 02/07
-* du 28/08 au 01/10
-* du 30/10 au 05/11
-* du 18/12 au 07/01
+* du <time datetime="2011-02-06">06 février</time> au <time datetime="2011-03-05">05 mars</time>
+* du <time datetime="2011-04-03">03 avril</time> au <time datetime="2011-07-02">02 juillet</time>
+* du <time datetime="2011-08-28">28 août</time> au <time datetime="2011-19-01">01 novembre</time>
+* du <time datetime="2011-10-30">30 octobre</time> au <time datetime="2011-11-05">05 novembre</time>
+* du <time datetime="2011-12-18">18 décembre</time> au <time datetime="2011-01-07">07 janvier</time>
 
 ## Basse Saison:
 
-* du 09/01 au 05/02
-* du 06/03 au 02/04
-* du 02/10 au 29/10
-* du 06/11 au 17/12
+* du <time datetime="2011-01-09">09 janvier</time> au <time datetime="2011-02-05">05 février</time>
+* du <time datetime="2011-03-06">06 mars</time> au <time datetime="2011-04-02">02 avril</time>
+* du <time datetime="2011-10-02">02 octobre</time> au <time datetime="2011-10-29">29 octobre</time>
+* du <time datetime="2011-11-06">06 novembre</time> au <time datetime="2011-12-17">17 décembre</time>
 

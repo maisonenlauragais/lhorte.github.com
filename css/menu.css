@@ -1,7 +1,8 @@
 /** see http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/ */
 
 ul#navigation {
-	margin: 0; padding: 0;
+	margin: 0; 
+	padding: 0;
 	float:left;
 	width: 100%;
 	list-style: none;
@@ -50,8 +51,12 @@ ul#navigation li .sub {
 	border-left: 1px solid #393f4d;
 	border-right: 2px solid #393f4d;
 	border-bottom: 2px solid #393f4d;
-	padding: 20px 20px 20px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
 	float: left;
+	display: none;
 	
 
 	/*--Bottom right rounded corner--*/
@@ -62,13 +67,11 @@ ul#navigation li .sub {
 	-moz-border-radius-bottomleft: 5px;
 	-khtml-border-radius-bottomleft: 5px;
 	-webkit-border-bottom-left-radius: 5px;
-	display: none;
 }
 ul#navigation li .row {
 	clear: both; 
 	float: left; 
 	width: 100%; 
-	margin-bottom: 10px;
 }
 ul#navigation li .sub ul {
 	list-style: none;
@@ -76,34 +79,36 @@ ul#navigation li .sub ul {
 	padding: 0;
 	width: 150px;
 	float: left;
-	
 }
 ul#navigation .sub ul li {
 	width: 100%;
 	color: #fff;
 	font-size:10px;
 	text-transform: none;
-	
 	padding: 0px 0px 0px 0px;
 	border-right: 0px;
 	border-left: 0px;
+	background-image:none;
 }
 ul#navigation .sub ul li h2 {
 	padding: 0;  
 	margin: 0;
 	font-size:15px;
 	font-weight: normal;
-	
 }
 ul#navigation .sub ul li h2 a {
-	padding: 5px 0;
 	background-image: none;
 	color: #e8e000;
 }
 ul#navigation .sub ul li a {
 	float: none; 
-	height: auto;
 	display: block;
 	text-decoration: none;
 	color: #fff;
 }
+ul#navigation .sub ul li a:hover {
+	color:#CCFABE;
+	text-decoration:none;
+	text-shadow: rgba(250, 250, 250, 0.8) 1px 1px 2px;
+}
+
