@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: french
 title: La maison du Jardinier
 ---
 
-modification simple 
 # Calme et Repos.
 En famille ou entre amis venez profiter du calme, du confort, et du charme d'une maison de charme en bas d'une colline splendide.
 Venez séjourner au coeur du pays cathare, dans notre maison de 150m2 pouvant accueillir de 1 à 8 personnes.

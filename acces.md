@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: french
 title: Accéder à la maison du jardinier
 ---
 

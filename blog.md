@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: french
 title: Blogs
 ---
 # Billets

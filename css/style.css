@@ -1,0 +1,225 @@
+body {
+background-image: url(/images/background.gif);
+}
+.container {
+background-color:white;
+padding: 10px;
+}
+
+#drapeaux {
+float:right;
+}
+
+
+/* MENU */
+#menu{
+height:33px;
+padding:0;
+font-family:verdana;
+font-size:15px;
+background-image: url('/images/menu.png');
+font-weight:bold;
+color:#393f4d;
+}
+#menu li{
+position:relative;
+display:block;
+float:left;
+list-style:none;
+border-right:1px solid #CCCCCC;
+border-left:1px solid #CCCCCC;
+text-transform: uppercase;
+line-height:33px;
+padding-left:22px;
+padding-right:22px;
+}
+#menu li.first {
+border-left:none;
+}
+#menu li.last {
+border-right:none;
+}
+#menu li:hover {
+background-image:url('/images/menu_hover.png');
+}
+#menu li a:hover{
+color:#FFFFFF;
+text-decoration:none;
+text-shadow: rgba(0, 0, 0, 0.398438) 2px 2px 2px;
+}
+#menu li a{
+color:#262626;
+text-decoration:none;
+text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
+}
+
+/** sidebar */
+#sidebar{
+background-color:#bbb;
+margin-top:5px;
+padding-top:10px;
+min-height:650px;
+padding-bottom: 10px;
+}
+#sidebar h1 {
+font-size:18px;
+color:#424242;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(119, 119, 119, 0.7) 2px 2px 2px;
+text-align:center;
+font-style:normal;
+border-bottom: 1px solid #424242;
+padding-left: 10px;
+}
+#sidebar  p {
+padding:10px 10px 10px 20px;
+text-align : left;
+}
+#sidebar a{
+color:#262626;
+text-decoration: underline;
+}
+#sidebar a:hover, #sidebar a:focus, {
+color:#555555;
+text-decoration: underline;
+}
+
+/** main */
+#main h1 {
+font-size:30px;
+color:#99c51c;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+font-style:normal;
+}
+#main h2 {
+padding-left:20px;
+font-size:18px;
+color:#99c51c;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+font-style:normal;
+}
+#main h3 {
+padding-left:30px;
+font-size:13px;
+color:#99c51c;
+font-style:italic;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+font-style:normal;
+}
+#main a {
+color:#7ea218;
+}
+#main a:hover, #main a:focus {
+color:#85a330;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+}
+#main ul li {
+margin-left:40px;
+padding:0;
+list-style:circle;
+text-align:justify;
+}
+
+#screen {
+padding:0 20px 20px 20px;
+}
+#screen img {
+border: 1px solid #CCC;
+padding: 2px;	
+margin: 0 5px 0 0;
+}
+
+
+.float-left {
+float:left;
+}
+
+#google_maps {
+width:60;
+border:1px solid #585858;
+padding:10px;
+text-align:center;
+}
+
+
+/** tarifs */
+table.tarifs thead tr th {
+background:#878787;
+width:10px;
+}
+
+table.tarifs thead tr td {
+background:#b7b7b7;
+width:120px;
+text-align:center;
+font-weight:bold;
+font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
+font-variant:small-caps;
+text-shadow: rgba(160, 160, 160, 0.5) 2px 2px 2px;
+font-style:normal;
+font-size:20px;
+
+}
+
+table.tarifs tbody tr.haute-saison th {
+background:#FE9A2E;
+text-align:left;
+}
+
+table.tarifs tbody tr.haute-saison td {
+background:#F7BE81;
+text-align:center;
+}
+
+
+table.tarifs tbody tr.pleine-saison th {
+background:#93bb88;
+text-align:left;
+}
+
+table.tarifs tbody tr.pleine-saison td {
+background:#ccfabe;
+text-align:center;
+}
+
+table.tarifs tbody tr.moyenne-saison th {
+background:#6896ca;
+text-align:left;
+}
+
+table.tarifs tbody tr.moyenne-saison td {
+background:#a3bedc;
+text-align:center;
+}
+
+table.tarifs tbody tr.basse-saison th {
+background:#df4f4f;
+text-align:left;
+}
+
+table.tarifs tbody tr.basse-saison td {
+background:#f5b8b8;
+text-align:center;
+}
+
+/** footer */
+
+#footer {
+margin:5px 0px 0px 0px;
+background-image:url('/images/menu_hover.png');`
+font-weight:bold;
+text-align:center;
+}
+
+/** google contact */
+body.ss-base-body {
+background:white;
+}

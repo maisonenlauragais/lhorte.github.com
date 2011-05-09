@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: french
 title: Le gîte
 ---
 
