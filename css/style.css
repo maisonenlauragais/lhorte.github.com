@@ -6,52 +6,24 @@ background-color:white;
 padding: 10px;
 }
 
+#header h1 {
+font-size:46px;
+font-variant:small-caps;
+text-shadow: rgba(119, 119, 119, 0.8) 2px 2px 2px;
+font-style:normal;
+}
+#header h1:hover {
+color:#red;
+text-shadow: rgba(222, 222, 222, 0.5) 2px 2px 2px;
+}
+#header h1 a{
+text-decoration: none;
+}
+
 #drapeaux {
 float:right;
 }
 
-
-/* MENU */
-#menu{
-height:33px;
-padding:0;
-font-family:verdana;
-font-size:15px;
-background-image: url('/images/menu.png');
-font-weight:bold;
-color:#393f4d;
-}
-#menu li{
-position:relative;
-display:block;
-float:left;
-list-style:none;
-border-right:1px solid #CCCCCC;
-border-left:1px solid #CCCCCC;
-text-transform: uppercase;
-line-height:33px;
-padding-left:22px;
-padding-right:22px;
-}
-#menu li.first {
-border-left:none;
-}
-#menu li.last {
-border-right:none;
-}
-#menu li:hover {
-background-image:url('/images/menu_hover.png');
-}
-#menu li a:hover{
-color:#FFFFFF;
-text-decoration:none;
-text-shadow: rgba(0, 0, 0, 0.398438) 2px 2px 2px;
-}
-#menu li a{
-color:#262626;
-text-decoration:none;
-text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
-}
 
 /** sidebar */
 #sidebar{
@@ -81,7 +53,7 @@ text-align : left;
 color:#262626;
 text-decoration: underline;
 }
-#sidebar a:hover, #sidebar a:focus, {
+#sidebar a:hover, #sidebar a:focus {
 color:#555555;
 text-decoration: underline;
 }

@@ -1,0 +1,109 @@
+/** see http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/ */
+
+ul#navigation {
+	margin: 0; padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+	height:33px;
+	padding:0;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold;
+	color:#393f4d;
+	background-image: url('/images/menu.png');
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid black;
+}
+ul#navigation li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	list-style:none;
+	border-right:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	text-transform: uppercase;
+	line-height:33px;
+	padding-left:22px;
+	padding-right:22px;
+}
+ul#navigation li:hover {
+	background-image:url('/images/menu_hover.png');
+}
+ul#navigation li a:hover{
+	color:#FFFFFF;
+	text-decoration:none;
+	text-shadow: rgba(0, 0, 0, 0.398438) 2px 2px 2px;
+}
+ul#navigation li a{
+	color:#262626;
+	text-decoration:none;
+	text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
+}
+ul#navigation li .sub {
+	position: absolute;	
+	top: 33px; 
+	left: 0;
+	font-size:10px;
+	background-color: #344c00;
+	border-left: 1px solid #393f4d;
+	border-right: 2px solid #393f4d;
+	border-bottom: 2px solid #393f4d;
+	padding: 20px 20px 20px;
+	float: left;
+	
+
+	/*--Bottom right rounded corner--*/
+	-moz-border-radius-bottomright: 5px;
+	-khtml-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	display: none;
+}
+ul#navigation li .row {
+	clear: both; 
+	float: left; 
+	width: 100%; 
+	margin-bottom: 10px;
+}
+ul#navigation li .sub ul {
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+	width: 150px;
+	float: left;
+	
+}
+ul#navigation .sub ul li {
+	width: 100%;
+	color: #fff;
+	font-size:10px;
+	text-transform: none;
+	
+	padding: 0px 0px 0px 0px;
+	border-right: 0px;
+	border-left: 0px;
+}
+ul#navigation .sub ul li h2 {
+	padding: 0;  
+	margin: 0;
+	font-size:15px;
+	font-weight: normal;
+	
+}
+ul#navigation .sub ul li h2 a {
+	padding: 5px 0;
+	background-image: none;
+	color: #e8e000;
+}
+ul#navigation .sub ul li a {
+	float: none; 
+	height: auto;
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}

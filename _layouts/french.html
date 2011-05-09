@@ -1,47 +1,195 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 <!-- Framework CSS -->
 <link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection">
+<link rel="stylesheet" href="/css/menu.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
 <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
 <!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection" ><![endif]-->
-
 <!-- Import fancy-type plugin for the sample page. -->
 <link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-
 <link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
 <title>{{; page.title }}</title>
-</head>
-<body>
-	<div class="container">
-		<div id="drapeaux">
-			<a href="/"><img src="/images/drapeau-fr.gif" border="0">
-			</a> <a href="/en/"><img src="/images/drapeau-gb.gif" border="0">
-			</a> <a href="/construction.html"><img src="/images/drapeau-de.gif" border="0">
-			</a> <a href="/construction.html"><img src="/images/drapeau-it.gif" border="0">
-			</a> <a href="/construction.html"><img src="/images/drapeau-es.gif" border="0">
-			</a>
-		</div>
-		<h1>
-			<a href="/">Maison du jardinier</a>
-		</h1>
-		<div id="menu">
-			<ul id="menu">
-				<li class="first"><a href="/">Accueil</a></li>
-				<li><a href="/gite.html">Le Gite</a></li>
-				<li><a href="/tarifs.html">Tarifs</a></li>
-				<li><a href="/construction.html">Galerie</a></li>
-				<li><a href="/acces.html">Acces</a></li>
-				<li><a href="/tourisme.html">Tourisme</a></li>
-				<li><a href="/blog.html">Blog</a></li>
-				<li class="last"><a href="/contact.html">Contact</a></li>
-			</ul>
-		</div>
-		<div id="main" class="span-18">{{ content }}</div>
-		<div id="sidebar" class="span-6 last">
+</head> 
+ 
+<body> 
+	<div class="container"> 
+		<header id="header">
+	 		<div id="drapeaux">
+				<a href="/"><img src="/images/drapeau-fr.gif" border="0"/></a>
+				<a href="/en/"><img src="/images/drapeau-gb.gif" border="0"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-de.gif" border="0"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-it.gif" border="0"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-es.gif" border="0"/></a>
+			</div>
+			<h1>
+				<a href="/">Maison du jardinier</a>
+			</h1>
+			<nav>
+			    <ul id="navigation">
+			    	<li> 
+			        	<a href="/" class="home">Acceuil</a> 
+			        </li> 
+			        <li> 
+			        	<a href="/gite.html">Le gîte</a> 
+			            <div class="sub" style="width:700px"> 
+			            	<ul> 
+			                	<li><h2><a href="#">Desktop</a></h2></li> 
+			                	<li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                </ul> 
+			                <ul> 
+			                	<li><h2><a href="#">Laptop</a></h2></li> 
+			                	<li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                </ul> 
+			                <ul> 
+			                	<li><h2><a href="#">Accessories</a></h2></li> 
+			                	<li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                </ul> 
+			                <ul> 
+			                	<li><h2><a href="#">Accessories</a></h2></li> 
+			                	<li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                    <li><a href="#">Navigation Link</a></li> 
+			                </ul> 
+			            </div> 
+			        </li> 
+			        <li>
+			        	<a href="/tarifs.html">Tarifs</a>
+			            <div class="sub" style="width:500px"> 
+			            	<div class="row"> 
+			                    <ul style="width: 225px;">
+			                        <li><h2><a href="#">Deal of the Week</a></h2></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                    </ul> 
+			                    <ul style="width: 225px;"> 
+			                        <li><h2><a href="#">Clearance Items</a></h2></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+			                    </ul> 
+			                </div> 
+			                <div class="row"> 
+			                    <ul> 
+			                        <li><h2><a href="#">Deal of the Week</a></h2></li> 
+			                        <li><a href="#">Navigation Link</a></li> 
+			                        <li><a href="#">Navigation Link</a></li> 
+			                        <li><a href="#">Navigation Link</a></li> 
+			                        <li><a href="#">Navigation Link</a></li> 
+			                    </ul> 
+			                    <ul> 
+			                        <li><h2><a href="#">Clearance Items</a></h2></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                    </ul> 
+				                    <ul> 
+				                        <li><h2><a href="#">Open Box Items</a></h2></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                    </ul> 
+				                </div> 
+				            </div> 
+				        </li> 
+				        <li> 
+				        	<a href="/construction.html">Galerie</a> 
+				        </li> 
+				        <li> 
+				        	<a href="/acces.html">Acces</a> 
+				        </li> 
+				        <li> 
+				        	<a href="/tourisme.html">Tourisme</a> 
+				        </li> 
+				        <li> 
+				        	<a href="/blog.html">Blog</a>
+				      		<div class="sub" style="width:500px;left:-291px;"> 
+				            	<div class="row"> 
+				                    <ul style="width: 225px;">
+				                        <li><h2><a href="#">Deal of the Week</a></h2></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                    </ul> 
+				                    <ul style="width: 225px;"> 
+				                        <li><h2><a href="#">Clearance Items</a></h2></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                        <li><a href="#">Navigation Link - 2 Column</a></li> 
+				                    </ul> 
+				                </div> 
+				                <div class="row"> 
+				                    <ul> 
+				                        <li><h2><a href="#">Deal of the Week</a></h2></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                    </ul> 
+				                    <ul> 
+				                        <li><h2><a href="#">Clearance Items</a></h2></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                    </ul> 
+				                    <ul> 
+				                        <li><h2><a href="#">Open Box Items</a></h2></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                        <li><a href="#">Navigation Link</a></li> 
+				                    </ul> 
+				                </div> 
+				            </div>  
+				        </li> 
+			        <li> 
+			        	<a href="/contact.html">Contact</a> 
+			        </li> 
+			    </ul>
+			</nav>
+		</header>
+		<section id="main" class="span-18">
+			{{ content }}
+		</section>
+		<section id="sidebar" class="span-6 last"> 
 			<h1>~ La maison du jardinier ~</h1>
 			<p>
 				Jean-Manuel Ramière de Fortanier<br /> 11400 Mireval-Lauragais<br /> Région: Languedoc-Roussillon<br /> Département: Aude<br /> <br /> Tel: XX.XX.XX.XX <br />
@@ -71,24 +219,35 @@
 					alt="Vin château-bas">
 				</a> Venez déguster et partager la culture et la qualité du vin des frères d'Albenas
 			</p>
-		</div>
-		<div id="footer" class="span-24 last">
+		</section>
+		<footer id="footer" class="span-24 last">
 			<a href="/">Accueil</a> | <a href="/gite.html">Le G&icirc;te</a> | <a href="/tarifs.html">Tarifs</a> | <a href="/galerie.html">Galerie</a> | <a href="/acces.html">Plan
 				d'acc&egrave;s</a> | <a href="/contact.html">Contact</a> <br /> &copy; 2011 - Le Maison du Jardinier
-		</div>
+		</footer>
 	</div>
-<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
-<script type="text/javascript" src="/js/fancybox/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="/js/fancybox/jquery.easing-1.3.pack.js"></script>
+	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript"> 
 	$(document).ready(function() {
+		function menuOver(){
+			$(this).find(".sub").stop().fadeTo('fast', 2).show();
+		}
+		
+		function menuOut(){ 
+			$(this).find(".sub").stop().fadeTo('slow', 2).hide();
+		}
+	 
+		$("ul#navigation li .sub").css({'opacity':'0'});
+		$("ul#navigation li").hover(menuOver, menuOut);
 		$("a.screen").fancybox({
 			'zoomSpeedIn' : 300,
 			'zoomSpeedOut' : 300,
 			'overlayShow' : true,
 			'overlayOpacity' : 0.7
 		});
+	 
 	});
-</script>
-</body>
+	</script> 
+</body> 
 </html>
