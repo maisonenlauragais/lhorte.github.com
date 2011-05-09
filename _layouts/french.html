@@ -71,7 +71,7 @@
 							<table class="tarifs" cellpadding="1" cellspacing="1" width="450">
 							        <thead>
 									<tr> 
-							        		<th>&nbsp;</th>
+							        	<th>&nbsp;</th>
 										<td>Saison</td>
 										<td>Semaine</td>
 										<td>Week-end</td>
@@ -181,7 +181,7 @@
 		}
 		
 		function menuOut(){ 
-//			$(this).find(".sub").stop().fadeTo('slow', 2).hide();
+			$(this).find(".sub").stop().fadeTo('slow', 2).hide();
 		}
 	 
 		$("ul#navigation li .sub").css({'opacity':'0'});
@@ -191,6 +191,23 @@
 			'zoomSpeedOut' : 300,
 			'overlayShow' : true,
 			'overlayOpacity' : 0.7
+		});
+		
+		$("#tarifs-per-week td").each(function (i) {
+			$(this).hover(function() {
+				var tarifClass = $(this).attr("class");
+				$("#tarif-for-week").show();
+
+				var semaine = $("table#tarifs-saison thead .tarif-semaine").html();
+				var weekend = $("table#tarifs-saison thead .tarif-weekend").html();
+				var saison = $("table#tarifs-saison tr." + tarifClass + " .saison").html();
+
+				var tarifSemaine = $("table#tarifs-saison tr." + tarifClass + " .tarif-semaine").html();
+				var tarifWeekend = $("table#tarifs-saison tr." + tarifClass + " .tarif-weekend").html();
+				
+				$("#tarif-for-week").html(saison + "<br/>Semaine n° " + (i+1) + "<br/>" + semaine + " : " + tarifSemaine + "<br/>" + weekend + " : " + tarifWeekend);
+				$("#tarif-for-week").attr("class",tarifClass);
+			});
 		});
 	});
 	</script> 

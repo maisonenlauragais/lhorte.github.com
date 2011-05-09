@@ -5,41 +5,121 @@ title: Tarifs 2010
 
 # Les tarifs 2010 
 
-<table class="tarifs" cellpadding="1" cellspacing="1" width="450">
+<table id="tarifs-saison" class="tarifs" summary="Tarifs en fonction des saisons">
 	<thead>
 		<tr> 
         	<th>&nbsp;</th>
-			<td>Saison</td>
-			<td>Semaine</td>
-			<td>Week-end</td>
+			<td class="saison">Saison</td>
+			<td class="tarif-semaine">Semaine</td>
+			<td class="tarif-weekend">Week-end</td>
 		</tr>
     </thead>
     <tbody>
 		<tr class="haute-saison">
 			<th>&nbsp;</th>
-			<td>Haute Saison</td>
-			<td>1500 €</td>
-			<td>400 €</td>
+			<td class="saison">Haute Saison</td>
+			<td class="tarif-semaine">1500 €</td>
+			<td class="tarif-weekend">400 €</td>
 		</tr>
 		<tr class="pleine-saison">
 			<th>&nbsp;</th>
-			<td>Pleine saison</td>
-			<td>1100 €</td>
-			<td>300 €</td>
+			<td class="saison">Pleine saison</td>
+			<td class="tarif-semaine">1100 €</td>
+			<td class="tarif-weekend">300 €</td>
 		</tr>
-        	<tr class="moyenne-saison">
+        <tr class="moyenne-saison">
 			<th>&nbsp;</th>
-			<td>Moyenne Saison</td>
-			<td>900 €</td>
-			<td>200 €</td>
+			<td class="saison">Moyenne Saison</td>
+			<td class="tarif-semaine">900 €</td>
+			<td class="tarif-weekend">200 €</td>
 		</tr>
 		<tr class="basse-saison">
 			<th>&nbsp;</th>
-			<td>Basse Saison</td>
-			<td>700 €</td>
-			<td>200 €</td>
+			<td class="saison">Basse Saison</td>
+			<td class="tarif-semaine">700 €</td>
+			<td class="tarif-weekend">200 €</td>
 		</tr>
 	</tbody>
+</table>
+
+## Semaines
+(à mettre à jour, j'ai mis au pif)
+<table id="tarifs-per-week" class="tarifs" summary="Tarifs en fonction des semaines">
+    <tbody>
+		<tr>
+			<td class="basse-saison">1</td>
+			<td class="basse-saison">2</td>
+			<td class="basse-saison">3</td>
+			<td class="basse-saison">4</td>
+			<td class="moyenne-saison">5</td>
+			<td class="moyenne-saison">6</td>
+			<td class="moyenne-saison">7</td>
+			<td class="moyenne-saison">8</td>
+			<td class="moyenne-saison">9</td>
+			<td class="moyenne-saison">10</td>
+		</tr>
+		<tr>
+			<td class="moyenne-saison">11</td>
+			<td class="moyenne-saison">12</td>
+			<td class="moyenne-saison">13</td>
+			<td class="moyenne-saison">14</td>
+			<td class="moyenne-saison">15</td>
+			<td class="moyenne-saison">16</td>
+			<td class="moyenne-saison">17</td>
+			<td class="moyenne-saison">18</td>
+			<td class="moyenne-saison">19</td>
+			<td class="moyenne-saison">20</td>
+		</tr>
+		<tr>
+			<td class="moyenne-saison">21</td>
+			<td class="pleine-saison">22</td>
+			<td class="pleine-saison">23</td>
+			<td class="pleine-saison">24</td>
+			<td class="pleine-saison">25</td>
+			<td class="pleine-saison">26</td>
+			<td class="pleine-saison">27</td>
+			<td class="pleine-saison">28</td>
+			<td class="pleine-saison">29</td>
+			<td class="pleine-saison">30</td>
+		</tr>
+		<tr>
+			<td class="haute-saison">31</td>
+			<td class="haute-saison">32</td>
+			<td class="haute-saison">33</td>
+			<td class="haute-saison">34</td>
+			<td class="haute-saison">35</td>
+			<td class="haute-saison">36</td>
+			<td class="haute-saison">37</td>
+			<td class="haute-saison">38</td>
+			<td class="haute-saison">39</td>
+			<td class="haute-saison">40</td>
+		</tr>
+		<tr>
+			<td class="pleine-saison">41</td>
+			<td class="pleine-saison">42</td>
+			<td class="pleine-saison">43</td>
+			<td class="pleine-saison">44</td>
+			<td class="pleine-saison">45</td>
+			<td class="pleine-saison">46</td>
+			<td class="pleine-saison">47</td>
+			<td class="basse-saison">48</td>
+			<td class="basse-saison">49</td>
+			<td class="basse-saison">50</td>
+		</tr>
+		<tr>
+			<td class="basse-saison">51</td>
+			<td class="basse-saison">52</td>
+			<td class="basse-saison">53</td>
+			<td class="basse-saison">54</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="tarifs">
+	<tr>
+    	<td id="tarif-for-week" style="display: none;" colspan="10">
+    	</td>
+    </tr>
 </table>
 
 ## Haute Saison:
