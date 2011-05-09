@@ -3,7 +3,7 @@ layout: french
 title: Tarifs 2010
 ---
 
-# Les tarifs 2010 
+# Les tarifs 2010
 
 <table id="tarifs-saison" class="tarifs" summary="Tarifs en fonction des saisons">
 	<thead>
@@ -42,7 +42,7 @@ title: Tarifs 2010
 	</tbody>
 </table>
 
-## Semaines
+# Les semaines 2010
 (à mettre à jour, j'ai mis au pif)
 <table id="tarifs-per-week" class="tarifs" summary="Tarifs en fonction des semaines">
     <tbody>
@@ -66,8 +66,8 @@ title: Tarifs 2010
 			<td class="moyenne-saison">15</td>
 			<td class="moyenne-saison">16</td>
 			<td class="moyenne-saison">17</td>
-			<td class="moyenne-saison">18</td>
-			<td class="moyenne-saison">19</td>
+			<td class="moyenne-saison reserve">18</td>
+			<td class="moyenne-saison reserve">19</td>
 			<td class="moyenne-saison">20</td>
 		</tr>
 		<tr>

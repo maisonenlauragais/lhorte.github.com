@@ -68,42 +68,53 @@
 			        <li>
 			        	<a href="/tarifs.html">Tarifs</a>
 			            <div class="sub" style="width:500px"> 
-							<table class="tarifs" cellpadding="1" cellspacing="1" width="450">
-							        <thead>
-									<tr> 
-							        	<th>&nbsp;</th>
-										<td>Saison</td>
-										<td>Semaine</td>
-										<td>Week-end</td>
-									</tr>
-							        </thead>
-							        <tbody>
-									<tr class="haute-saison">
-										<th>&nbsp;</th>
-										<td>Haute Saison</td>
-										<td>1500 €</td>
-										<td>400 €</td>
-									</tr>
-									<tr class="pleine-saison">
-										<th>&nbsp;</th>
-										<td>Pleine saison</td>
-										<td>1100 €</td>
-										<td>300 €</td>
-									</tr>
-							        	<tr class="moyenne-saison">
-										<th>&nbsp;</th>
-										<td>Moyenne Saison</td>
-										<td>900 €</td>
-										<td>200 €</td>
-									</tr>
-									<tr class="basse-saison">
-										<th>&nbsp;</th>
-										<td>Basse Saison</td>
-										<td>700 €</td>
-										<td>200 €</td>
-									</tr>
-								</tbody>
-							</table>
+			            	<div class="row"> 
+								<table class="tarifs" cellpadding="1" cellspacing="1" width="450">
+									<thead>
+										<tr> 
+								        	<th>&nbsp;</th>
+											<td>Saison</td>
+											<td>Semaine</td>
+											<td>Week-end</td>
+										</tr>
+								    </thead>
+								    <tbody>
+										<tr class="haute-saison">
+											<th>&nbsp;</th>
+											<td>Haute Saison</td>
+											<td>1500 €</td>
+											<td>400 €</td>
+										</tr>
+										<tr class="pleine-saison">
+											<th>&nbsp;</th>
+											<td>Pleine saison</td>
+											<td>1100 €</td>
+											<td>300 €</td>
+										</tr>
+								        	<tr class="moyenne-saison">
+											<th>&nbsp;</th>
+											<td>Moyenne Saison</td>
+											<td>900 €</td>
+											<td>200 €</td>
+										</tr>
+										<tr class="basse-saison">
+											<th>&nbsp;</th>
+											<td>Basse Saison</td>
+											<td>700 €</td>
+											<td>200 €</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+			            	<div class="row">
+				            	<ul> 
+				                	<li><h2><a href="#">Semaines</a></h2></li> 
+				                </ul> 
+				            	<ul> 
+				                	<li><h2><a href="#">Disponibilités</a></h2></li> 
+				                </ul> 
+			            	</div> 
+						</div>
 			        </li> 
 			        <li> 
 			        	<a href="/construction.html">Galerie</a> 
@@ -195,18 +206,22 @@
 		
 		$("#tarifs-per-week td").each(function (i) {
 			$(this).hover(function() {
-				var tarifClass = $(this).attr("class");
 				$("#tarif-for-week").show();
-
-				var semaine = $("table#tarifs-saison thead .tarif-semaine").html();
-				var weekend = $("table#tarifs-saison thead .tarif-weekend").html();
-				var saison = $("table#tarifs-saison tr." + tarifClass + " .saison").html();
-
-				var tarifSemaine = $("table#tarifs-saison tr." + tarifClass + " .tarif-semaine").html();
-				var tarifWeekend = $("table#tarifs-saison tr." + tarifClass + " .tarif-weekend").html();
-				
-				$("#tarif-for-week").html(saison + "<br/>Semaine n° " + (i+1) + "<br/>" + semaine + " : " + tarifSemaine + "<br/>" + weekend + " : " + tarifWeekend);
-				$("#tarif-for-week").attr("class",tarifClass);
+				if ($(this).hasClass("reserve")) {
+					$("#tarif-for-week").html("Cette semaine est déjà réservée");
+					$("#tarif-for-week").attr("class","reserve");
+				} else {
+					var tarifClass = $(this).attr("class");
+					var semaine = $("table#tarifs-saison thead .tarif-semaine").html();
+					var weekend = $("table#tarifs-saison thead .tarif-weekend").html();
+					var saison = $("table#tarifs-saison tr." + tarifClass + " .saison").html();
+	
+					var tarifSemaine = $("table#tarifs-saison tr." + tarifClass + " .tarif-semaine").html();
+					var tarifWeekend = $("table#tarifs-saison tr." + tarifClass + " .tarif-weekend").html();
+					
+					$("#tarif-for-week").html("<b>" + saison + "</b><br/>Semaine n° " + (i+1) + "<br/>" + semaine + " : " + tarifSemaine + "<br/>" + weekend + " : " + tarifWeekend);
+					$("#tarif-for-week").attr("class",tarifClass);
+				}
 			});
 		});
 	});

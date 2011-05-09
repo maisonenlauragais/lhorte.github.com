@@ -186,6 +186,11 @@ background:#f5b8b8;
 text-align:center;
 }
 
+table.tarifs td.reserve {
+background:red;
+text-align:center;
+}
+
 /** footer */
 
 #footer {
