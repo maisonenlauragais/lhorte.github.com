@@ -42,6 +42,8 @@ title: Tarifs 2010
 	</tbody>
 </table>
 
+<a name="semaine"></a>
+<a name="dispos"></a>
 # Les semaines 2010
 (à mettre à jour, j'ai mis au pif)
 <table id="tarifs-per-week" class="tarifs" summary="Tarifs en fonction des semaines">
