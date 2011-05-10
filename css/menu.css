@@ -11,10 +11,9 @@ ul#navigation {
 	font-family:verdana;
 	font-size:15px;
 	font-weight:bold;
-	color:#393f4d;
-	background-image: url('/images/menu.png');
-	border-top: 1px solid lightgrey;
-	border-bottom: 1px solid black;
+	color:white;
+	border: 1px solid #CCCCCC;
+	background-image:url('/images/menu_hover.png');
 }
 ul#navigation li {
 	float: left;
@@ -23,14 +22,13 @@ ul#navigation li {
 	position: relative;
 	list-style:none;
 	border-right:1px solid #CCCCCC;
-	border-left:1px solid #CCCCCC;
 	text-transform: uppercase;
 	line-height:33px;
 	padding-left:22px;
 	padding-right:22px;
 }
 ul#navigation li:hover {
-	background-image:url('/images/menu_hover.png');
+	color:#FFFFF;
 }
 ul#navigation li a:hover{
 	color:#FFFFFF;
@@ -38,7 +36,7 @@ ul#navigation li a:hover{
 	text-shadow: rgba(0, 0, 0, 0.398438) 2px 2px 2px;
 }
 ul#navigation li a{
-	color:#262626;
+	color:#344c00;
 	text-decoration:none;
 	text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
 }
@@ -57,6 +55,7 @@ ul#navigation li .sub {
 	padding-bottom: 10px;
 	float: left;
 	display: none;
+	color:black;
 	
 
 	/*--Bottom right rounded corner--*/
@@ -107,7 +106,7 @@ ul#navigation .sub ul li a {
 	color: #fff;
 }
 ul#navigation .sub ul li a:hover {
-	color:#CCFABE;
+	color:white;
 	text-decoration:none;
 	text-shadow: rgba(250, 250, 250, 0.8) 1px 1px 2px;
 }
