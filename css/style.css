@@ -115,6 +115,14 @@ margin: 0 5px 0 0;
 float:left;
 }
 
+/** disqus */
+div#disqus_thread ul li {
+margin-left: 0px;
+padding: 0;
+list-style: none;
+text-align: none;
+}
+
 #google_maps {
 width:60;
 border:1px solid #585858;
