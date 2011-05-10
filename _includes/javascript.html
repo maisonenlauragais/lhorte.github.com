@@ -1,0 +1,51 @@
+
+<!-- javascript.html -->
+<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
+<script type="text/javascript" src="/js/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="/resources/uniform-1.5/jquery.uniform.min.js" ></script>
+
+<script type="text/javascript"> 
+$(document).ready(function() {
+	function menuOver(){
+		$(this).find(".sub").stop().fadeTo('fast', 2).show();
+	}
+	
+	function menuOut(){ 
+		$(this).find(".sub").stop().fadeTo('slow', 2).hide();
+	}
+ 
+	$("ul#navigation li .sub").css({'opacity':'0'});
+	$("ul#navigation li").hover(menuOver, menuOut);
+	$("a.screen").fancybox({
+		'zoomSpeedIn' : 300,
+		'zoomSpeedOut' : 300,
+		'overlayShow' : true,
+		'overlayOpacity' : 0.7
+	});
+	
+	$("#tarifs-per-week td").each(function (i) {
+		$(this).hover(function() {
+			$("#tarif-for-week").show();
+			if ($(this).hasClass("reserve")) {
+				$("#tarif-for-week").html("<b>" + semaineReservee + "</b>");
+				$("#tarif-for-week").attr("class","reserve");
+			} else {
+				var tarifClass = $(this).attr("class");
+				var semaine = $("table#tarifs-saison thead .tarif-semaine").html();
+				var weekend = $("table#tarifs-saison thead .tarif-weekend").html();
+				var saison = $("table#tarifs-saison tr." + tarifClass + " .saison").html();
+
+				var tarifSemaine = $("table#tarifs-saison tr." + tarifClass + " .tarif-semaine").html();
+				var tarifWeekend = $("table#tarifs-saison tr." + tarifClass + " .tarif-weekend").html();
+				
+				$("#tarif-for-week").html("<b>" + saison + "</b><br/>" + semaine + " n° " + (i+1) + "<br/>" + semaine + " : " + tarifSemaine + "<br/>" + weekend + " : " + tarifWeekend);
+				$("#tarif-for-week").attr("class",tarifClass);
+			}
+		});
+	});
+	
+	$("input:text, textarea").uniform();
+});
+</script>
+<!-- javascript.html -->

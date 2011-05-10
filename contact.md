@@ -3,10 +3,10 @@ layout: french
 title: Contactez nous 
 ---
 
-# Contact nous
+# Contactez nous
 
 <table summary="Formulaire de contact">
-<form id="contactform" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFNpeEY2aXFZZkJ6UVJFb3Z2b2tjOFE6MQ" method="POST"> 
+<form id="contactform" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFNpeEY2aXFZZkJ6UVJFb3Z2b2tjOFE6MQ" method="POST" target="none"> 
 <input type="hidden" name="pageNumber" value="0"/>
 <input type="hidden" name="backupCache" value=""/>
 	<tbody>

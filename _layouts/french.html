@@ -1,37 +1,21 @@
 <!DOCTYPE html> 
 <html xmlns="http://www.w3.org/1999/xhtml"> 
-<head> 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-<!-- Framework CSS -->
-<link rel="stylesheet" href="/css/style.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="/css/menu.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
-
-<link rel="stylesheet" href="/resources/uniform-1.5/css/uniform.aristo.css" type="text/css" media="screen" charset="utf-8" />
-
-<!--[if lt IE 8]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection" ><![endif]-->
-<!-- Import fancy-type plugin for the sample page. -->
-<link rel="stylesheet" href="/css/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
-<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox-1.3.4.css" media="screen">
-
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-<title>{{; page.title }}</title>
+<head>
+{% include head.html %}
+<script type="text/javascript"> 
+var semaineReservee = "Cette semaine est déjà réservée";
+var semaine = "Semaine";
+</script> 
 </head> 
- 
 <body> 
 	<div class="container"> 
 		<header id="header">
 	 		<div id="drapeaux">
-				<a href="/"><img src="/images/drapeau-fr.gif" border="0"/></a>
-				<a href="/en/"><img src="/images/drapeau-gb.gif" border="0"/></a>
-				<a href="/construction.html"><img src="/images/drapeau-de.gif" border="0"/></a>
-				<a href="/construction.html"><img src="/images/drapeau-it.gif" border="0"/></a>
-				<a href="/construction.html"><img src="/images/drapeau-es.gif" border="0"/></a>
+				<a href="/"><img src="/images/drapeau-fr.gif"/></a>
+				<a href="/en/"><img src="/images/drapeau-gb.gif"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-de.gif"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-it.gif"/></a>
+				<a href="/construction.html"><img src="/images/drapeau-es.gif"/></a>
 			</div>
 			<h1>
 				<a href="/">La Maison du jardinier</a>
@@ -170,8 +154,8 @@
 			      		<div class="sub" style="width:250px;left:-100px;"> 
 			            	<div class="row"> 
 			                    <ul style="width: 225px;">
-				                	<li><h2><a href="/blog.html#semaine">Nos billets</a></h2></li> 
-									{% for post in site.posts %}
+				                	<li><h2><a href="/blog.html#semaine">Nos billets</a></h2></li>
+									{% for post in site.posts limit:5 %}
 									<li><a href="{{ post.url }}">{{ post.title }} {{ post.date | date_to_string }}</a></li>
 									{% endfor %}
 			                    </ul> 
@@ -257,53 +241,24 @@
 				d'acc&egrave;s</a> | <a href="/contact.html">Contact</a> <br /> &copy; 2011 - Le Maison du Jardinier
 		</footer>
 	</div>
-	<script type="text/javascript" src="/js/jquery-1.4.3.min.js"></script>
-	<script type="text/javascript" src="/js/fancybox/jquery.easing-1.3.pack.js"></script>
-	<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-	<script type="text/javascript" src="/resources/uniform-1.5/jquery.uniform.min.js" ></script>
 	
-	<script type="text/javascript"> 
-	$(document).ready(function() {
-		function menuOver(){
-			$(this).find(".sub").stop().fadeTo('fast', 2).show();
-		}
-		
-		function menuOut(){ 
-			$(this).find(".sub").stop().fadeTo('slow', 2).hide();
-		}
-	 
-		$("ul#navigation li .sub").css({'opacity':'0'});
-		$("ul#navigation li").hover(menuOver, menuOut);
-		$("a.screen").fancybox({
-			'zoomSpeedIn' : 300,
-			'zoomSpeedOut' : 300,
-			'overlayShow' : true,
-			'overlayOpacity' : 0.7
-		});
-		
-		$("#tarifs-per-week td").each(function (i) {
-			$(this).hover(function() {
-				$("#tarif-for-week").show();
-				if ($(this).hasClass("reserve")) {
-					$("#tarif-for-week").html("<b>Cette semaine est déjà réservée</b>");
-					$("#tarif-for-week").attr("class","reserve");
-				} else {
-					var tarifClass = $(this).attr("class");
-					var semaine = $("table#tarifs-saison thead .tarif-semaine").html();
-					var weekend = $("table#tarifs-saison thead .tarif-weekend").html();
-					var saison = $("table#tarifs-saison tr." + tarifClass + " .saison").html();
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'example'; // required: replace example with your forum shortname
+
+    // The following are highly recommended additional parameters. Remove the slashes in front to use.
+    // var disqus_identifier = 'unique_dynamic_id_1234';
+    // var disqus_url = 'http://example.com/permalink-to-page.html';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
 	
-					var tarifSemaine = $("table#tarifs-saison tr." + tarifClass + " .tarif-semaine").html();
-					var tarifWeekend = $("table#tarifs-saison tr." + tarifClass + " .tarif-weekend").html();
-					
-					$("#tarif-for-week").html("<b>" + saison + "</b><br/>Semaine n° " + (i+1) + "<br/>" + semaine + " : " + tarifSemaine + "<br/>" + weekend + " : " + tarifWeekend);
-					$("#tarif-for-week").attr("class",tarifClass);
-				}
-			});
-		});
-		
-		$("input:text, textarea").uniform();
-	});
-	</script> 
+	{% include javascript.html %} 
 </body> 
 </html>
