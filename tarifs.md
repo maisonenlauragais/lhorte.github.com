@@ -149,3 +149,10 @@ title: Tarifs 2010
 * du <time datetime="2011-10-02">02 octobre</time> au <time datetime="2011-10-29">29 octobre</time>
 * du <time datetime="2011-11-06">06 novembre</time> au <time datetime="2011-12-17">17 décembre</time>
 
+# Informations
+
+- Une caution de 300 € est demandée à l’arrivée dans le gîte; elle sera restituée lors du départ après état des lieux (intérieur et extérieurs) 
+Une déduction pourra être faite pour une éventuelle remise en état.
+- La taxe de séjour du 01/04 au 30/09: 0.60€ par jour pour toute personne de plus de 13 ans
+- Chèques vacances ANCV acceptés
+- Cartes bancaires non acceptées

@@ -1,14 +1,15 @@
 ---
 layout: french
-title: Contactez nous 
+title: Réservation de la maison du jardinier 
 ---
 
-# Contactez nous
+# Réservez en ligne
 
-<table summary="Formulaire de contact">
+<table summary="Formulaire de réservation">
 <form id="contactform" action="https://spreadsheets.google.com/spreadsheet/formResponse?formkey=dFNpeEY2aXFZZkJ6UVJFb3Z2b2tjOFE6MQ" method="POST" target="none"> 
 <input type="hidden" name="pageNumber" value="0"/>
 <input type="hidden" name="backupCache" value=""/>
+	<tbody>
 		<tr>
 			<th>
 				Nom
@@ -34,7 +35,29 @@ title: Contactez nous
 				Téléphone
 			</th>
 			<th>
-				<input type="text" name="entry.3.single" value="" style="width:100px"/>
+				<input type="text" name="entry.2.single" value="" style="width:100px"/>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				Date du séjour
+			</th>
+			<th colspan="3">
+				<input type="text" name="entry.2.single" value="" style="width:300px"/>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				Adultes
+			</th>
+			<th>
+				<input type="text" name="entry.2.single" value="" style="width:150px"/>
+			</th>
+			<th>
+				Enfants
+			</th>
+			<th>
+				<input type="text" name="entry.2.single" value="" style="width:100px"/>
 			</th>
 		</tr>
 		<tr>
@@ -48,8 +71,6 @@ title: Contactez nous
 	</tbody>
 	<tfoot>
 		<tr>
-			<th colspan="2">
-			</th>
 			<th align="right">
 				<input type="submit" name="submit" value="Envoyer" style="padding:10px;font-size:15px;border: 1px solid #BEBEBE;background-color: white;"/>
 			</th>
@@ -58,4 +79,3 @@ title: Contactez nous
 </form>
 </table>
 
-## Nous vous répondrons dans les 24 heures.

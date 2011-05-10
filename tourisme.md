@@ -19,21 +19,30 @@ title: Tourisme
 * ...
 
 
-# Cité de Carcasonne
+## Cité de Carcasonne
 blabla + liens + images
 
-# Les châteaux cathares
+## Les châteaux cathares
 blabla + liens + images
 
-# Le canal du Midi
+## Le canal du Midi
 blabla + liens + images
 
-# Le lac du Lampy
+## Le lac du Lampy
 blabla + liens + images
 
-# Le barrage de Saint Ferréol
+## Le barrage de Saint Ferréol
 blabla + liens + images
 
-# Castelnaudary
+## Castelnaudary
 blabla + liens + images
 
+# Quelques dates....
+* Début juillet : passage dans la région du tour de France.
+* 13 juillet : feu d'artifice sur le canal du midi à Castelnaudary
+* 14 juillet : embrasement de la cité de Carcassonne (pour fêter la prise de la bastille) - connu du monde entier - ( 2004 : 70000 pers)
+* 1er week-end août : fête locale du village de Laurac-Le-Grand (bal et repas).
+* Dernier week-end août : festival du cassoulet à Castelnaudary - www.fete-du-cassoulet.com
+* Jour des marchés
+  * lundi matin à Castelnaudary et Mirepoix
+  * Mercredi matin Bram

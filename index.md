@@ -23,11 +23,19 @@ Vous pourrez en avoir l'expérience dès cet été...
 <a href="/photos/interieur.jpg" class="screen" title="Maison vu de l'intérieur" rel="group"><img src="/photos/interieur_petit.jpg" alt="Vue de l'intérieur" /></a> 
 </div> 
 
+# être à plusieurs familles
+
+Pour vous permetre d'être ensemble, mais sans vous marcher sur les pieds. 
+Vous pouvez louer également
+ 
+* la "<a href="maisons.html">Maison de François</a>" qui de l'autre côté de la prairie à 100 mètres.
+* la "<a href="maisons.html">Bourdette</a>" qui juxtapose la propriété à 150 mètre
+* ou encore "<a href="maisons.html">Crabo Négado</a>" qui est à portée de vélo (3km). 
+
 # Une histoire de famille
 
-Un abandon, une restauration, un avenir, votre plaisir...
+Une fonction, un abandon, une restauration, un avenir, votre plaisir...
 <div id="screen"> 
 <a href="/photos/histoire.jpg" class="screen" title="Une histoire unique" rel="group"><img src="/photos/histoire_petit.jpg" alt="Une histoire unique" /></a>&nbsp;&nbsp;
 </div>
-
 
