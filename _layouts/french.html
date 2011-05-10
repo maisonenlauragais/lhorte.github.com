@@ -120,12 +120,6 @@
 						</div>
 			        </li> 
 			        <li> 
-			        	<a href="/construction.html">Galerie</a> 
-			        </li> 
-			        <li> 
-			        	<a href="/acces.html">Acces</a> 
-			        </li> 
-			        <li> 
 			        	<a href="/tourisme.html">Tourisme</a>
 			            <div class="sub" style="width:450px;left:-104px;"> 
 			            	<div class="row"> 
@@ -175,15 +169,48 @@
 			      		<div class="sub" style="width:250px;left:-100px;"> 
 			            	<div class="row"> 
 			                    <ul style="width: 225px;">
+				                	<li><h2><a href="/blog.html#semaine">Nos billets</a></h2></li> 
 									{% for post in site.posts %}
-									<li><a href="{{ post.url }}">{{ post.date | date_to_string }} {{ post.title }}</a></li>
+									<li><a href="{{ post.url }}">{{ post.title }} {{ post.date | date_to_string }}</a></li>
 									{% endfor %}
 			                    </ul> 
 			                </div> 
 			            </div>  
+			        </li>
+			        <li> 
+			        	<a href="/acces.html">Acces</a> 
+			            <div class="sub" style="width:300px;"> 
+			            	<div class="row"> 
+				            	<ul> 
+				                	<li><h2><a href="/acces.html">En avion</a></h2></li>
+				                    <li><h2><a href="/acces.html">En voiture</a></h2></li> 
+				                </ul>
+				            	<ul> 
+				                    <li><h2><a href="/acces.html">En train</a></h2></li> 
+				                    <li><h2><a href="/acces.html">Sur un poney ?</a></h2></li> 
+				                </ul> 
+				            </div>
+				         </div> 
 			        </li> 
 			        <li> 
 			        	<a href="/contact.html">Contact</a> 
+			            <div class="sub" style="width:300px;left:-62px;"> 
+			            	<div class="row"> 
+				            	<ul> 
+				                	<li><h2><a href="#">Par email</a></h2></li> 
+				                	<li><a href="mailto:xxx@domain.com">xxx@domain.com</a></li> 
+				                </ul> 
+				            	<ul> 
+				                	<li><h2><a href="/contact.html">Au téléphone</a></h2></li> 
+				                	<li><a href="/contact.html">xx.xx.xx.xx</a></li> 
+				                </ul> 
+				            </div>
+			            	<div class="row"> 
+			            		<ul style="width:300px"> 
+				                	<li><h2><a href="/contact.html">Via notre formulaire en ligne ...</a></h2></li> 
+				                </ul> 
+				            </div>
+				    	</div> 
 			        </li> 
 			    </ul>
 			</nav>
