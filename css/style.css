@@ -312,6 +312,11 @@ background:red;
 text-align:center;
 }
 
+/** tarifs */
+table.tarifs  {
+border: 1px solid grey;
+}
+
 /** footer */
 
 #footer {
@@ -320,9 +325,4 @@ background: #344c22;
 font-weight:bold;
 text-align:center;
 border: 1px dotted grey;
-}
-
-/** google contact */
-body.ss-base-body {
-background:white;
 }

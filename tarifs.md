@@ -119,7 +119,8 @@ title: Tarifs 2010
 
 <table class="tarifs">
 	<tr>
-    	<td id="tarif-for-week" style="display: none;" colspan="10">
+    	<td id="tarif-for-week" colspan="10">
+    		Passez votre souris sur les semaines pour voir les tarifs
     	</td>
     </tr>
 </table>
