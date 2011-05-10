@@ -202,7 +202,9 @@ var semaine = "Semaine";
 		</header>
 		<section id="main" class="span-18">
 			{{ content }}
+			{% if page.comments %}
 			<div id="disqus_thread"></div>
+			{% endif %}
 		</section>
 		<section id="sidebar" class="span-6 last"> 
 			<h1>~ La maison du jardinier ~</h1>
