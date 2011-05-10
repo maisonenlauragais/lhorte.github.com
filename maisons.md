@@ -19,6 +19,7 @@ Les plus:
 Une ancienne fermme restaurée aux gros oignons.
 
 Les plus:
+
 * la vue
 * l'espace
 * la colline
