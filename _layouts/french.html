@@ -7,7 +7,8 @@
 	var semaine = "Semaine";
 	</script> 
 </head> 
-<body class="container"> 
+<body>
+<div  class="container"> 
 	<header id="header">
 		<nav>
 	 		<div id="drapeaux">
@@ -20,7 +21,7 @@
 			<h1>
 				<a href="/">La Maison du jardinier</a>
 			</h1>
-		    <ul id="navigation">
+		    <ul id="menu">
 		    	<li> 
 		        	<a href="/" class="home">Acceuil</a> 
 		        </li> 
@@ -108,7 +109,7 @@
 		        </li> 
 		        <li> 
 		        	<a href="/tourisme.html">Tourisme</a>
-		            <div class="sub" style="width:450px;left:-104px;"> 
+		            <div class="sub" style="width:450px;"> 
 		            	<div class="row"> 
 			            	<ul> 
 			                	<li><h2><a href="/tourisme.html#semaine">Culture</a></h2></li> 
@@ -153,7 +154,7 @@
 		        </li> 
 		        <li> 
 		        	<a href="/blog.html">Blog</a>
-		      		<div class="sub" style="width:250px;left:-100px;"> 
+		      		<div class="sub" style="width:250px;"> 
 		            	<div class="row"> 
 		                    <ul style="width: 225px;">
 			                	<li><h2><a href="/blog.html#semaine">Nos billets</a></h2></li>
@@ -165,7 +166,7 @@
 		            </div>  
 		        </li>
 		        <li> 
-		        	<a href="/acces.html">Acces</a> 
+		        	<a href="/acces.html">Accès</a> 
 		            <div class="sub" style="width:300px;"> 
 		            	<div class="row"> 
 			            	<ul> 
@@ -181,7 +182,7 @@
 		        </li> 
 		        <li> 
 		        	<a href="/contact.html">Contact</a> 
-		            <div class="sub" style="width:300px;left:-62px;"> 
+		            <div class="sub" style="width:300px;"> 
 		            	<div class="row"> 
 			            	<ul> 
 			                	<li><h2><a href="#">Par email</a></h2></li> 
@@ -223,9 +224,9 @@
 		</p>
 		<h1>~ Gite de France ~</h1>
 		<p>
-			La maison du jardinier est référençée sur <a href="http://www.gites-de-france.com" alt="Gite de France">Gîtes de France</a><br>
+			La maison du jardinier est référençée sur <a href="http://www.gites-de-france.com" alt="Gite de France">Gîtes de France</a>
 		</p>
-		<p text-align="center"><a href="http://www.gites-de-france.com/" target="_none"><img src="/images/gite-de-france.png"></a></p>
+		<p><center><a href="http://www.gites-de-france.com/" target="_none"><img src="/images/gite-de-france.png"/></center></p>
 		<h1>~ Cadeau de Bienvenue ~</h1>
 		<p>
 			<a href="/photos/panier_garni.jpg" style="float: left; padding-right: 5px" class="screen" title="Le Panier Garni" rel="lightbox">
@@ -244,9 +245,9 @@
 		</p>
 	</section>
 	<footer id="footer" class="span-24 last">
-		<a href="/">Accueil</a> | <a href="/gite.html">Le G&icirc;te</a> | <a href="/tarifs.html">Tarifs</a> | <a href="/galerie.html">Galerie</a> | <a href="/acces.html">Plan
-			d'acc&egrave;s</a> | <a href="/contact.html">Contact</a> <br /> &copy; 2011 - Le Maison du Jardinier
+		 &copy; 2011 - Le Maison du Jardinier
 	</footer>
-	{% include javascript.html %} 
+</div> 
+{% include javascript.html %}
 </body> 
 </html>

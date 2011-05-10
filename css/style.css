@@ -3,39 +3,152 @@ background-image: url(/images/background.gif);
 }
 .container {
 background-color:white;
+border: 1px dotted lightgrey;
 padding: 10px;
 }
 
 #header h1 a {
 font-size:46px;
 font-variant:small-caps;
-font-style:normal;
 font-style: italic;
+font-weight:bold;
 color: #99C51C;
 font-family: "Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
 font-variant: small-caps;
-text-shadow: rgba(119, 119, 119, 0.8) 2px 2px 2px;
 text-decoration: none;
+text-shadow: rgba(100, 100, 100, 0.5) 2px 2px 2px;
 }
 #header h1 a:hover {
-text-shadow: rgba(100, 100, 100, 0.5) 2px 2px 2px;
+text-shadow: rgba(119, 119, 119, 0.8) 2px 2px 2px;
 }
 
 #drapeaux {
 float:right;
 }
 
+/** menu see http://www.sohtanaka.com/web-design/mega-drop-downs-w-css-jquery/ */
+
+ul#menu {
+	margin: 0; 
+	padding: 0;
+	float:left;
+	width: 100%;
+	list-style: none;
+	height:33px;
+	padding:0;
+	font-family:verdana;
+	font-size:15px;
+	font-weight:bold;
+	color:white;
+	border: 1px solid #aaaaaa;
+	background: #344c22;
+	
+}
+ul#menu li {
+	float: left;
+	margin: 0; 
+	padding: 0;
+	position: relative;
+	list-style:none;
+	border-right:1px solid grey;
+	line-height:33px;
+	padding-left:22px;
+	padding-right:22px;
+}
+ul#menu li:hover {
+	color:#FFFFF;
+}
+ul#menu li a{
+	color:#e8e000;
+	text-decoration:none;
+	text-shadow: rgba(119, 119, 119, 0.8) 1px 1px 2px;
+}
+ul#menu li a:hover{
+	color:white;
+	text-decoration:none;
+	text-shadow: rgba(250, 250, 250, 0.8) 1px 1px 2px;
+}
+ul#menu li .sub {
+	position: absolute;	
+	top: 33px; 
+	left: 0;
+	font-size:10px;
+	background-color: #344c22;
+	border-top: 1px solid #aaaaaa;
+	border-left: 1px solid #aaaaaa;
+	border-right: 2px solid #aaaaaa;
+	border-bottom: 2px solid #aaaaaa;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	float: left;
+	display: none;
+	color:black;
+	
+
+	/*--Bottom right rounded corner--*/
+-moz-border-radius-bottomright: 5px;
+-khtml-border-radius-bottomright: 5px;
+-webkit-border-bottom-right-radius: 5px;
+/*--Bottom left rounded corner--*/
+	-moz-border-radius-bottomleft: 5px;
+	-khtml-border-radius-bottomleft: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+ul#menu li .row {
+	clear: both; 
+	float: left; 
+	width: 100%; 
+}
+ul#menu li .sub ul {
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+	width: 150px;
+	float: left;
+}
+ul#menu .sub ul li {
+	width: 100%;
+	color: #fff;
+	font-size:10px;
+	text-transform: none;
+	padding: 0px 0px 0px 0px;
+	border-right: 0px;
+	border-left: 0px;
+	background-image:none;
+}
+ul#menu .sub ul li h2 {
+	padding: 0;  
+	margin: 0;
+	font-size:15px;
+	font-weight: normal;
+}
+ul#menu .sub ul li h2 a {
+	background-image: none;
+	color: #e8e000;
+}
+ul#menu .sub ul li a {
+	float: none; 
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+ul#menu .sub ul li a:hover {
+	color:white;
+	text-decoration:none;
+	text-shadow: rgba(250, 250, 250, 0.8) 1px 1px 2px;
+}
 
 /** sidebar */
 #sidebar{
 background-color:#bbb;
 margin-top:5px;
-padding-top:10px;
+padding-top:5px;
 min-height:650px;
-padding-bottom: 10px;
 }
 #sidebar h1 {
-font-size:18px;
+font-size:17px;
 color:#424242;
 font-style:italic;
 font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Helvetica Neue",Helvetica,Arial,Verdana,sans-serif;
@@ -44,10 +157,9 @@ text-shadow: rgba(119, 119, 119, 0.7) 2px 2px 2px;
 text-align:center;
 font-style:normal;
 border-bottom: 1px solid #424242;
-padding-left: 10px;
 }
 #sidebar  p {
-padding:10px 10px 10px 20px;
+padding:5px 10px 0px 10px;
 text-align : left;
 }
 #sidebar a{
@@ -203,10 +315,11 @@ text-align:center;
 /** footer */
 
 #footer {
-margin:5px 0px 0px 0px;
-background-image:url('/images/menu_hover.png');`
+color:white;
+background: #344c22;
 font-weight:bold;
 text-align:center;
+border: 1px dotted grey;
 }
 
 /** google contact */
