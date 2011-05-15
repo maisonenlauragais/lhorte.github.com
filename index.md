@@ -39,3 +39,5 @@ Une fonction, un abandon, une restauration, un avenir, votre plaisir...
 <a href="/photos/histoire.jpg" class="screen" title="Une histoire unique" rel="group"><img src="/photos/histoire_petit.jpg" alt="Une histoire unique" /></a>&nbsp;&nbsp;
 </div>
 
+# restauration
+## une histoire de famille
