@@ -1,6 +1,6 @@
 ---
 layout: french
-title: La maison du Jardinier
+title: L'horte
 ---
 
 # Calme et Repos.
